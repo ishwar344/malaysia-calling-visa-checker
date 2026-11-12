@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malaysia Calling Visa Checker</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5f9;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 450px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #ddd;
+}
+h1 {
+  text-align: center;
+  color: #087b50;
+}
+p {
+  text-align: center;
+  color: #555;
+}
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  background: #087b50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+#message {
+  text-align: center;
+  margin-top: 15px;
+  color: #087b50;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Malaysia Visa Checker</h1>
+
+<p>Check Your Malaysia Calling Visa Status</p>
+<p>मलेसिया कलिङ भिसाको अवस्था जाँच गर्नुहोस्</p>
+
+<input type="text" id="passport"
+placeholder="Enter Passport Number">
+
+<input type="text" id="application"
+placeholder="Enter Application Number">
+
+<button onclick="checkVisa()">Check Visa Status</button>
+
+<div id="message">
+</div>
+
+</div>
+
+<script>
+function checkVisa() {
+  let passport = document.getElementById("passport").value;
+  let application = document.getElementById("application").value;
+
+  if (passport === "" || application === "") {
+    document.getElementById("message").innerText =
+    "Please enter both numbers.";
+    return;
+  }
+
+  document.getElementById("message").innerText =
+  "Database connection is coming soon.";
+}
+</script>
+
+</body>
+</html>
